@@ -1,0 +1,7 @@
+<div class="col count" id="todo-count">
+	<%= remaining %>
+	<%= remaining === 1 ? 'TODO ITEM' : 'TODO ITEMS' %> LEFT (OUT OF <%= total %>)
+</div>
+<div class="col clear-completed">
+	<button class="m-btn" id="clear-completed" <%= !completed ? 'disabled' : '' %>>Clear completed</button>
+</div>

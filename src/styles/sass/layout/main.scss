@@ -1,0 +1,88 @@
+/* Main styles */
+
+.l-main {
+
+	font-size: 14px;
+
+	.m-btn-del {
+		height: 22px;
+		margin-top: -19px;
+		box-shadow: none;
+		background: url(../../images/sprite.png) no-repeat -34px 0;
+	}
+
+	.m-btn-complete {
+		font-size: 12px;
+		padding: 3px 12px;
+		margin-left: 18px;
+	}
+
+	.clear-completed {
+		text-align: right;
+	}
+
+	.actions-container {
+		padding: 10px;
+
+		#toggle-all {
+			visibility: hidden;
+		}
+
+		.count {
+			color: #8f8e8e;
+		}
+
+		.cols {
+			display: inline-block;
+
+			&.col-1 {
+				width: 43%;
+			}
+
+			&.col-2 {
+				width: 55%;
+			}
+		}
+
+		.col {
+			display: inline-block;
+			width: 49%;
+		}
+	}
+
+	.todo-list {
+		text-transform: uppercase;
+		
+		.todo-title {
+			display: block;
+			width: 500px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+
+	ul {
+
+		li {
+			padding: .6%;
+			padding-left: 30px;
+			background-color: #faf9f9;
+			margin-bottom: 3px;
+
+			&.completed {
+				background-color: #f0eeee;
+			}
+
+			button {
+				position: absolute;
+				right: 30px;
+			}
+
+			.hidden {
+				display: none;
+			}
+		}
+	}
+}
+

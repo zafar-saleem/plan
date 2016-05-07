@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Plan</title>
+    <!-- build:css styles/styles.min.css -->
+    <link rel="stylesheet" href="styles/css/styles.css">
+    <!-- /build -->
+    
+</head>
+<body>
+    <section id="todoapp">
+        <header id="header" class="l-header">
+            <img src="images/logo.png" alt="Digitas LBi Logo">
+            <input id="new-todo" class="new-todo" placeholder="Click here to add a new todo..." autofocus>
+            <button id="btn-add-item" class="m-btn btn-add-item">Add</button>
+        </header>
+        <section class="l-main" id="main">
+            <div class="actions-container">
+                <div class="cols col-1">
+                    <input id="toggle-all" type="checkbox">
+                    <label for="toggle-all" class="m-btn m-btn-complete">Complete all</label>
+                </div>
+                <div class="cols col-2 actions">
+                    
+                </div>
+            </div>
+            <ul id="todo-list" class="todo-list"></ul>
+        </section>
+        <footer class="l-footer">
+        </footer>
+    </section>
+
+	<!-- build:js scripts/scripts.min.js -->
+    <script src="js/libs/requirejs/require.js"></script>
+    <script>
+        require(['js/config'], function () {
+            require(['main'], function (main) {});
+        });
+    </script>
+	<!-- /build -->
+</body>
+</html>

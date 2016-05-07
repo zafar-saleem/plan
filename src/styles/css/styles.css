@@ -1,0 +1,227 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * style.scss
+ *
+ * CSS framework.
+ * ----------------------------------------------------------------------------------------
+ */
+/* Base */
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.completed {
+  text-decoration: line-through; }
+
+/* Layout */
+/* Header styles */
+.l-header {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  padding: 20px 0 0 0;
+  background-color: #db1b35; }
+  .l-header .btn-add-item {
+    position: absolute;
+    top: 130px;
+    right: 44px; }
+  .l-header .new-todo {
+    outline: none;
+    position: absolute;
+    bottom: 10px;
+    width: 50%;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: .5% 2%;
+    left: 23%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #db1b35; }
+  .l-header .invalid {
+    -webkit-animation: shake .5s linear;
+    -moz-animation: shake .5s linear;
+    -o-animation: shake .5s linear;
+    -ms-animation: shake .5s linear; }
+@keyframes shake {
+  8%, 41% {
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    transform: translateX(-10px); }
+  25%, 58% {
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px); }
+  75% {
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    transform: translateX(-5px); }
+  92% {
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    transform: translateX(5px); }
+  0%, 100% {
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    transform: translateX(0px); } }
+/* Main styles */
+.l-main {
+  font-size: 14px; }
+  .l-main .m-btn-del {
+    height: 22px;
+    margin-top: -19px;
+    box-shadow: none;
+    background: url(../../images/sprite.png) no-repeat -34px 0; }
+  .l-main .m-btn-complete {
+    font-size: 12px;
+    padding: 3px 12px;
+    margin-left: 18px; }
+  .l-main .clear-completed {
+    text-align: right; }
+  .l-main .actions-container {
+    padding: 10px; }
+    .l-main .actions-container #toggle-all {
+      visibility: hidden; }
+    .l-main .actions-container .count {
+      color: #8f8e8e; }
+    .l-main .actions-container .cols {
+      display: inline-block; }
+      .l-main .actions-container .cols.col-1 {
+        width: 43%; }
+      .l-main .actions-container .cols.col-2 {
+        width: 55%; }
+    .l-main .actions-container .col {
+      display: inline-block;
+      width: 49%; }
+  .l-main .todo-list {
+    text-transform: uppercase; }
+    .l-main .todo-list .todo-title {
+      display: block;
+      width: 500px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+  .l-main ul li {
+    padding: .6%;
+    padding-left: 30px;
+    background-color: #faf9f9;
+    margin-bottom: 3px; }
+    .l-main ul li.completed {
+      background-color: #f0eeee; }
+    .l-main ul li button {
+      position: absolute;
+      right: 30px; }
+    .l-main ul li .hidden {
+      display: none; }
+
+/* Footer styles */
+.l-footer {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #ffffff; }
+
+/* Modules */
+/* Button styles */
+.m-btn {
+  text-transform: uppercase;
+  padding: 4px 12px;
+  background-color: #f8f7f7;
+  border: 1px solid #f8f7f7;
+  box-shadow: 2px 2px #e3e3e3; }
+  .m-btn.btn-add-item {
+    color: #db1b35;
+    box-shadow: 2px 2px #c3182f; }
+
+input[type=checkbox] {
+  position: absolute;
+  width: 2em;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  opacity: 0; }
+  input[type=checkbox] + label > span {
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    background: url("../../images/sprite.png") no-repeat 0 0;
+    line-height: 24px; }
+  input[type=checkbox]:checked + label > span {
+    background-position: -17px 0; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .l-header {
+    height: 180px; }
+    .l-header .new-todo {
+      width: 95%;
+      left: 0;
+      bottom: 45px; }
+    .l-header .btn-add-item {
+      top: 60px;
+      left: 0;
+      width: 94% !important;
+      position: relative; }
+
+  .m-btn-complete {
+    margin-left: 0 !important; }
+
+  .actions-container .cols {
+    display: block !important;
+    margin-bottom: 20px; }
+  .actions-container .col-1, .actions-container .col-2 {
+    width: 100% !important;
+    margin-bottom: 20px; }
+  .actions-container .col {
+    display: block;
+    width: 100% !important;
+    margin-bottom: 10px; }
+  .actions-container .clear-completed {
+    text-align: left !important; }
+  .actions-container .m-btn {
+    display: block;
+    width: 100%;
+    text-align: center; }
+  .actions-container label {
+    width: 91% !important; }
+
+  .todo-list .todo-title {
+    display: block;
+    width: 200px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; } }
+/* ----------- iPhone 6, 6+ ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .actions-container label {
+    width: 93% !important; }
+
+  #todo-list li .view .todo-title {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; } }
+/* ----------- Galaxy S4 ----------- */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .actions-container label {
+    width: 93% !important; }
+
+  #todo-list li .view .todo-title {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; } }
+
+/*# sourceMappingURL=styles.css.map */

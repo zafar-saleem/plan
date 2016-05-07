@@ -1,0 +1,51 @@
+/* Main styles */
+.l-main {
+  font-size: 14px; }
+  .l-main .m-btn-del {
+    height: 22px;
+    margin-top: -19px;
+    box-shadow: none;
+    background: url(../../images/sprite.png) no-repeat -34px 0; }
+  .l-main .m-btn-complete {
+    font-size: 12px;
+    padding: 3px 12px;
+    margin-left: 18px; }
+  .l-main .clear-completed {
+    text-align: right; }
+  .l-main .actions-container {
+    padding: 10px; }
+    .l-main .actions-container #toggle-all {
+      visibility: hidden; }
+    .l-main .actions-container .count {
+      color: #8f8e8e; }
+    .l-main .actions-container .cols {
+      display: inline-block; }
+      .l-main .actions-container .cols.col-1 {
+        width: 43%; }
+      .l-main .actions-container .cols.col-2 {
+        width: 55%; }
+    .l-main .actions-container .col {
+      display: inline-block;
+      width: 49%; }
+  .l-main .todo-list {
+    text-transform: uppercase; }
+    .l-main .todo-list .todo-title {
+      display: block;
+      width: 500px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+  .l-main ul li {
+    padding: .6%;
+    padding-left: 30px;
+    background-color: #faf9f9;
+    margin-bottom: 3px; }
+    .l-main ul li.completed {
+      background-color: #f0eeee; }
+    .l-main ul li button {
+      position: absolute;
+      right: 30px; }
+    .l-main ul li .hidden {
+      display: none; }
+
+/*# sourceMappingURL=main.css.map */

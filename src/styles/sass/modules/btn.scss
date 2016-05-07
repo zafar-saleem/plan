@@ -1,0 +1,13 @@
+/* Button styles */
+.m-btn {
+	text-transform: uppercase;
+	padding: 4px 12px;
+	background-color: #f8f7f7;
+	border: 1px solid #f8f7f7;
+	box-shadow: 2px 2px #e3e3e3;
+
+	&.btn-add-item {
+		color: #db1b35;
+		box-shadow: 2px 2px #c3182f;
+	}
+}

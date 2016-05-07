@@ -1,0 +1,17 @@
+{
+  "name": "Plan",
+  "version": "0.0.0",
+  "authors": [
+    "Zafar Saleem"
+  ],
+  "dependencies": {
+    "jquery": null,
+    "requirejs": null,
+    "underscore": null,
+    "backbone": null,
+    "backbone.localStorage": "~1.1.16"
+  },
+  "devDependencies": {
+    "backbone.localStorage": "~1.1.16"
+  }
+}

@@ -1,0 +1,20 @@
+input[type=checkbox] {
+    position: absolute;
+    width: 2em;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    opacity: 0;
+
+    & + label > span {
+        display: inline-block;
+        width: 17px;
+        height: 18px;
+        background: url('../../images/sprite.png') no-repeat 0 0;
+        line-height: 24px; 
+    }
+
+    &:checked + label > span {
+        background-position: -17px 0;
+    }
+}

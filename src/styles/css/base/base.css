@@ -1,0 +1,14 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.completed {
+  text-decoration: line-through; }
+
+/*# sourceMappingURL=base.css.map */

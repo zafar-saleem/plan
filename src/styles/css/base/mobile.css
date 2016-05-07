@@ -1,0 +1,63 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .l-header {
+    height: 180px; }
+    .l-header .new-todo {
+      width: 95%;
+      left: 0;
+      bottom: 45px; }
+    .l-header .btn-add-item {
+      top: 60px;
+      left: 0;
+      width: 94% !important;
+      position: relative; }
+
+  .m-btn-complete {
+    margin-left: 0 !important; }
+
+  .actions-container .cols {
+    display: block !important;
+    margin-bottom: 20px; }
+  .actions-container .col-1, .actions-container .col-2 {
+    width: 100% !important;
+    margin-bottom: 20px; }
+  .actions-container .col {
+    display: block;
+    width: 100% !important;
+    margin-bottom: 10px; }
+  .actions-container .clear-completed {
+    text-align: left !important; }
+  .actions-container .m-btn {
+    display: block;
+    width: 100%;
+    text-align: center; }
+  .actions-container label {
+    width: 91% !important; }
+
+  .todo-list .todo-title {
+    display: block;
+    width: 200px !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; } }
+/* ----------- iPhone 6, 6+ ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .actions-container label {
+    width: 93% !important; }
+
+  #todo-list li .view .todo-title {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; } }
+/* ----------- Galaxy S4 ----------- */
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .actions-container label {
+    width: 93% !important; }
+
+  #todo-list li .view .todo-title {
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; } }
+
+/*# sourceMappingURL=mobile.css.map */
